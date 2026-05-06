@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Usaha Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('about')">About</a>
+    <a href="#" onclick="showPage('produk')">Produk</a>
+    <a href="#" onclick="showPage('kontak')">Kontak</a>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="container">
+    <h1>Usaha Digital Kreatif</h1>
+    <p>Kami menyediakan produk digital seperti desain, jasa pengetikan, dan stiker custom.</p>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="container hidden">
+    <h1>Tentang Usaha</h1>
+    <p><b>Nama Usaha:</b> Digital Kreatif</p>
+    <p><b>Latar Belakang:</b> Membantu kebutuhan digital siswa dan masyarakat.</p>
+    <p><b>Visi:</b> Menjadi usaha digital terpercaya</p>
+    <p><b>Misi:</b> Memberikan layanan terbaik</p>
+</div>
+
+<!-- PRODUK -->
+<div id="produk" class="container hidden">
+    <h1>Produk Kami</h1>
+
+    <div class="produk">
+        <h3>Template Desain</h3>
+        <p>Template siap pakai</p>
+        <b>Rp 20.000</b>
+    </div>
+
+    <div class="produk">
+        <h3>Jasa Pengetikan</h3>
+        <p>Membantu mengetik tugas</p>
+        <b>Rp 5.000/lembar</b>
+    </div>
+
+    <div class="produk">
+        <h3>Stiker WA Custom</h3>
+        <p>Buat stiker dari foto kamu</p>
+        <b>Rp 10.000</b>
+    </div>
+</div>
+
+<!-- KONTAK -->
+<div id="kontak" class="container hidden">
+    <h1>Kontak</h1>
+
+    <form onsubmit="kirimData(event)">
+        <input type="text" id="nama" placeholder="Nama" required><br><br>
+        <input type="email" id="email" placeholder="Email" required><br><br>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <div id="hasil"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
